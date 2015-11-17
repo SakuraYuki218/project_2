@@ -12,6 +12,11 @@ img {
 	text-align: center;
 }
 
+.logo img {
+	max-width: 100%;
+	height: auto;
+}
+
 .nav {
 	padding: 0;
 	list-style: none;
@@ -20,6 +25,10 @@ img {
 
 .nav li {
 	display: inline-block;
+}
+
+.page-section {
+	margin-top: 50px;
 }
 
 .nav a {
@@ -165,7 +174,7 @@ h2 {
 }
 
 .logo {
-	width: 805px;
+	width: 84%;
 }
 
 .source-items {
@@ -237,12 +246,17 @@ h2 {
 }
 
 .about-gallery {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 35%;
 	padding: 15px;
 	background: rgba(0,0,0,.5)
+}
+
+@media (min-width: 600px) {
+	.about-gallery {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+	}
 }
 
 .gallery img {
